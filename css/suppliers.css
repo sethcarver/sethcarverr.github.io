@@ -1,0 +1,242 @@
+
+body {
+    color: #111111;
+    background-color: #C1B8C6;
+}
+
+#container {
+  background-color: #07243A;
+  z-index: 10;
+  margin: 20px auto;
+  width: 1480px;
+  height: auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 200px 1fr;
+  grid-auto-rows: 70px 200px 600px 150px 150px;
+  grid-template-areas: 
+    "a a"
+    "b c"
+    "d d"
+    "e e";
+  border: 4px solid #FFC220;
+  padding: 20px;
+  }
+
+#a, #b, #c, #d, #e {
+    z-index: 20;
+    border: 4px solid #FFC220;
+    background-color: #C1B8C6;
+    font-family: 'Josefin Sans';
+}
+
+#a {
+  grid-area: a;
+}
+
+#a ul li {  
+  display: inline;
+  padding: 113px;
+  font-size: 1em;
+  font-weight: bold;
+}
+  
+#a ul a:link {
+  color: #07243A;
+}
+  
+#a ul a:hover {
+  text-decoration: underline;
+}
+  
+#a ul a:active {
+  color: #07243A;
+}
+
+#b {
+  grid-area: b;
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  text-align: center;
+}
+
+#b img {
+  width: 80%;
+  height: auto;
+}
+
+#c {
+  grid-area: c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#c h1 {
+  color: #07243A; 
+  font-size: 3.5em;
+  font-family: 'Silkscreen';
+}
+
+#d {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    color: #C1B8C6;
+    text-align: justify;
+}
+
+#d h2 {
+    color: #C1B8C6;
+}
+
+#d p {
+    color: #C1B8C6;
+    text-align: center;
+    padding: 30px;
+}   
+
+#d::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/supp.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+#e {
+    grid-area: e;
+}
+
+#e ul {
+    text-align: center;
+}
+
+#e ul li {
+    display: inline;
+    padding: 90px;
+    font-size: 1.25em;
+    color: #07243A;
+}
+
+/* Classes */
+
+.box {
+    border-radius: 7px;
+    border: 4px solid #FFC220;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #07243A;
+}
+
+.title-box {
+    color: #C1B8C6;
+    height: 70px;
+}
+
+.paragraph-box {
+    color: #C1B8C6;
+    height: 300px;
+}
+
+.currentpage {
+  color: #07243A;
+  text-decoration: underline;
+}
+
+.cmiddle {   /* Centers content vertically */                                      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rmiddle {  /* Centers content horizontally */                                         
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Color Palette
+
+#111111
+#ffffff
+
+#096076
+#C1B8C6
+#040C14
+#FFC220
+#093F54
+#06605F
+#07243A
+#044040
+#3E77A4
+#533754
+
+/*
+
+/* Below are various code snippets for future use as needed */
+
+
+/* Google Fonts
+
+
+*/
+
+
+/* Full Screen Background Image
+
+background-image:url(../images/);
+background-position: center center;
+background-repeat:  no-repeat;
+background-attachment: fixed;
+background-size:  cover;
+background-color: var(--black);
+
+*/
+
+
+/* Individual Side Box Shadows
+
+top {
+  box-shadow: 0px -15px 10px -15px #111;
+}
+
+right {
+  box-shadow: 15px 0px 10px -15px #111;
+}
+
+bottom {
+  box-shadow: 0px 15px 10px -15px #111;
+}
+
+left {
+  box-shadow: -15px 0px 10px -15px #111;
+}
+
+*/
+
+/*  Fullscreen Video Background CSS
+
+#video-background {
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+
+*/
